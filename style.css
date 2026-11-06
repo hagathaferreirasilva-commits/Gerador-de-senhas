@@ -1,0 +1,192 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0fa;
+    color: #30243d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #7541a8;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #887b94;
+    margin-bottom: 30px;
+}
+
+/* Área do gerador */
+.gerador {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(80, 40, 110, 0.10);
+    text-align: left;
+}
+
+h2 {
+    font-size: 18px;
+    color: #57317c;
+    margin-bottom: 15px;
+}
+
+/* Área da senha */
+.senha-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.senha-area input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d9c9e8;
+    border-radius: 8px;
+    background-color: #faf7fd;
+    color: #57317c;
+    font-size: 14px;
+}
+
+/* Botões */
+button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#copiar {
+    background-color: #e9dcf5;
+    color: #653a8e;
+    padding: 12px 16px;
+}
+
+#copiar:hover {
+    background-color: #d9c2ed;
+}
+
+/* Opções de personalização */
+.opcoes {
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.opcoes label {
+    font-size: 14px;
+    color: #5f5369;
+}
+
+.opcoes input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #d9c9e8;
+    border-radius: 7px;
+    outline: none;
+    color: #57317c;
+    background-color: #faf7fd;
+}
+
+.opcoes input:focus {
+    border-color: #925bc0;
+}
+
+/* Botão gerar senha */
+.botao-gerar {
+    width: 100%;
+    padding: 14px;
+    background-color: #7541a8;
+    color: white;
+    font-size: 16px;
+}
+
+.botao-gerar:hover {
+    background-color: #5e328a;
+}
+
+/* Indicador de segurança */
+.seguranca {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f7f2fb;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.seguranca h3 {
+    font-size: 14px;
+    color: #756482;
+    margin-bottom: 8px;
+}
+
+#nivel {
+    font-size: 17px;
+    font-weight: bold;
+    color: #7541a8;
+}
+
+/* Mensagens */
+#mensagem {
+    text-align: center;
+    font-size: 13px;
+    color: #7541a8;
+    margin-top: 15px;
+    min-height: 16px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 25px;
+    color: #9b8da7;
+    font-size: 12px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .gerador {
+        padding: 20px;
+    }
+
+    .senha-area {
+        flex-direction: column;
+    }
+
+    #copiar {
+        width: 100%;
+    }
+
+    .opcoes {
+        grid-template-columns: 1fr 75px;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Violet Password</h1>
+        <p class="subtitle">Crie uma senha forte e segura!</p>
+
+        <section class="gerador">
+
+            <h2>Sua senha</h2>
+
+            <div class="senha-area">
+                <input type="text" id="senha" readonly placeholder="Sua senha aparecerá aqui">
+                <button id="copiar">Copiar</button>
+            </div>
+
+            <h2>Personalize sua senha</h2>
+
+            <div class="opcoes">
+                <label for="numeros">Quantidade de números:</label>
+                <input type="number" id="numeros" min="0" max="50" value="4">
+
+                <label for="maiusculas">Letras maiúsculas:</label>
+                <input type="number" id="maiusculas" min="0" max="50" value="4">
+
+                <label for="minusculas">Letras minúsculas:</label>
+                <input type="number" id="minusculas" min="0" max="50" value="4">
+
+                <label for="simbolos">Caracteres especiais:</label>
+                <input type="number" id="simbolos" min="0" max="50" value="2">
+            </div>
+
+            <button id="gerar" class="botao-gerar">
+                Gerar senha
+            </button>
+
+            <div class="seguranca">
+                <h3>Nível de segurança:</h3>
+                <p id="nivel">Aguardando senha...</p>
+            </div>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+        <footer>
+            <p>HAGATHA LETICIA FERREIRA DA SILVA © 2026</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
